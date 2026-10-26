@@ -1,6 +1,6 @@
-int energy = 55;
+int energy = 39;
 
 // TODO: Energy må være mellom 40 og 70, inklusive.
-bool isStable = false;
+bool isStable = energy >= 40 && energy <= 70;
 
 Console.WriteLine($"Reactor stable: {isStable}");
