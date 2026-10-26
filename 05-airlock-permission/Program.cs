@@ -1,10 +1,10 @@
 bool hasSuit = true;
 int oxygenPercent = 44;
 int pressure = 101;
-bool alarmActive = false;
+bool alarmActive = !true;
 
 // TODO: Kombiner alle kravene i ett logisk uttrykk.
-bool canOpenAirlock = false;
+bool canOpenAirlock = hasSuit && oxygenPercent > 30 && pressure >= 90 && pressure <= 110 && alarmActive;
 
 if (canOpenAirlock)
 {
